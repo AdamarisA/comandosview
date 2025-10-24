@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM_AA.MVVM.VIEWS.comandosView"
+             Title="comandosView">
+    <VerticalStackLayout>
+        <Button Text="click me"
+            Command="{Binding ClickComand}"/>
+        <SearchBar
+        x:Name="searchBar"
+        SearchCommand="{Binding SearchCommand}"
+        SearchCommandParameter="{Binding Source={x:Reference searchBar},
+        Path=Text}"/>
+    </VerticalStackLayout>
+
+</ContentPage> 
