@@ -9,16 +9,16 @@ namespace MVVM_AA.MVVM.ViewModels
 {
     internal class personViewModel
     {
-        public person person { get; set; }
+        public Person person { get; set; }
         public personViewModel()
         {
-            person = new person()
+            person = new Person()
             {
                 Name = "Alexia",
                 Age = 19,
-                married = true,
-                birthday = new DateTime(2006, 08, 19),
-                weight = 70,
+                Married = true,
+                Birthday = new DateTime(2006, 08, 19),
+                Weight = 70,
                 LunchTime = new TimeSpan(12, 30, 0)
             };
         }

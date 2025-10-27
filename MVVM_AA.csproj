@@ -63,10 +63,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="MVVM\VIEWS\Genteviews.xaml.cs">
+	    <DependentUpon>Genteviews.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="MVVM\VIEWS\comandosView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVVM\VIEWS\GenteviewsModel.xaml">
+	  <MauiXaml Update="MVVM\VIEWS\Genteviews.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\VIEWS\PersonView.xaml">
